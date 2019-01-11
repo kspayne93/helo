@@ -8,10 +8,10 @@ const initialState = {
 const GET_USER_PROFILE = 'GET_USER_PROFILE'
 
 //ACTION CREATORS
-export function getProfile(id, username, profile_pic) {
+export function getUserProfile(userData) {
    return {
       type: GET_USER_PROFILE,
-      payload: {id, username, profile_pic}
+      payload: userData
    }
 }
 
@@ -19,10 +19,11 @@ export function getProfile(id, username, profile_pic) {
 export default function reducer(state = initialState, action) {
    switch(action.type) {
       case GET_USER_PROFILE:
+         let { id, username, profile_pic} = action.payload
          return {...state, 
-            id: action.payload,
-            username: action.payload,
-            profile: action.payload}
+            id: id,
+            username: username,
+            profile_pic: profile_pic}
 
       default:
          return state;

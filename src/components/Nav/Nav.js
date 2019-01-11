@@ -22,7 +22,7 @@ function Nav (props) {
 
 function mapStateToProps (reduxState) {
    const { username, profile_pic } = reduxState;
-   return { username, profile_pic };
+   return {username, profile_pic};
 }
 
 export default connect(mapStateToProps)(Nav);

@@ -14,6 +14,6 @@ module.exports = {
       const {username, password} = req.body
 
       const response = await db.find_user({username, password})
-      res.status(200).send(response)
+      res.status(200).send(response);
    }
 }
