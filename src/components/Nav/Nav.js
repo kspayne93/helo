@@ -8,7 +8,7 @@ function Nav (props) {
       return (
          <div className='navbar'>
             <div className='profile'>
-               <img src={props.profile_pic} alt=""/>
+               <img src={props.profile_pic}/>
                <span> {props.username} </span>
             </div>
             <div className='nav-buttons-container'>

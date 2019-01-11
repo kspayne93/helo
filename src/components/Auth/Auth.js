@@ -16,8 +16,8 @@ class Auth extends Component {
    async register() {
       const { username, password } = this.state;
       const response = await axios.post('/auth/register', { username: username, password: password })
-      console.log(response.data)
-      this.props.getUserProfile(response.data)
+      console.log(response.data[0])
+      this.props.getUserProfile(response.data[0])
       
       this.props.history.push('/dashboard')
    };

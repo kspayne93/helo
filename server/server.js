@@ -23,3 +23,4 @@ massive(CONNECTION_STRING).then(db => {
 //ENDPOINTS
 app.post('/auth/register', controller.register) //register
 app.post('/auth/login', controller.login) //login
+// app.get('/posts', controller.getAll) //get posts to be displayed on dashboard

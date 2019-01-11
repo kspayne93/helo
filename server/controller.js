@@ -15,5 +15,10 @@ module.exports = {
 
       const response = await db.find_user({username, password})
       res.status(200).send(response);
-   }
+   },
+
+   // getAll: async (req, res) => {
+   //    const db = req.app.get('db');
+   //    const 
+   // }
 }
